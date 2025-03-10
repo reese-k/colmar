@@ -43,6 +43,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .get-started {
     width: 100%;
     display: flex;
@@ -53,7 +57,7 @@ a {
 .get-started img {
     padding: 32px 24px;
     width: 60%;
-    
+    overflow: hidden;
 }
 
 .start-here {
@@ -107,6 +111,7 @@ button a {
     height: auto;
     width: 100%;
     padding-bottom: 32px;
+    overflow: hidden;
 }
 
 .practice h2 {
@@ -137,7 +142,7 @@ button a {
     height: auto;
     width: 35%;
     padding: 16px;
-    
+    overflow: hidden;
 }
 
 .more-info a {
@@ -226,33 +231,18 @@ button a {
     height: auto;
     width: 100%;
     margin-bottom: 16px;
+    overflow: hidden;
 }
 
-.software {
-    padding-bottom: 24px;
-    margin-right: 32px;
-}
-
-.computer-art {
-    padding-bottom: 24px;
-    margin-right: 32px;
-}
-
-.design {
-    padding-bottom: 24px;
-    
-}
-
-.data {
-    padding-bottom: 24px;
-    margin-right: 32px;
-}
-
+.software,
+.computer-art,
+.data,
 .business {
     padding-bottom: 24px;
     margin-right: 32px;
 }
 
+.design,
 .marketing {
     padding-bottom: 24px;
     
@@ -276,7 +266,8 @@ button a {
 }
 
 video {
-    width: 100%
+    width: 100%;
+    overflow: hidden;
 }
 
 .video h4 {
@@ -294,6 +285,7 @@ video {
     height: auto;
     width: 35%;
     margin: 16px;
+    overflow: hidden;
 }
 
 .fisma {
@@ -357,4 +349,10 @@ footer {
 
 footer h5 {
     font-weight: 300;
+}
+
+@media only screen and (max-width: 480px) { 
+    footer {
+        
+    }
 }
